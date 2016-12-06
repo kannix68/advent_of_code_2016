@@ -25,6 +25,10 @@ force solutions.
 Perl means a perl 5 standard distribution,
 tested using perl v5.18.2 on Mac OS X.
 
+### python
+Python means a python 2.7 standard distribution,
+tested using python 2.7.12 in a homebrew environment on Mac OS X.
+
 ### ruby
 Ruby means a ruby 2.3 standard distribution (MRI),
 tested using ruby v2.3.1 in a rvm environment on Mac OS X.
