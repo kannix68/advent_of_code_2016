@@ -1,7 +1,7 @@
 # advent_of_code_2016
 Advent of code 2016 solutions
 
-By kannix68@github.
+By kannix68 @ github dot com.
 
 ## Solutions
 
@@ -34,4 +34,13 @@ Ruby means a ruby 2.3 standard distribution (MRI),
 tested using ruby v2.3.1 in a rvm environment on Mac OS X.
 
 ### clojure
-Clojure means clojure 1.8 in a Mac OS X java jre environment.
+Clojure means clojure 1.8 in a Mac OS X java JRE environment.
+
+### kotlin
+Kotlin means `kotlinc` compiler in a Mac OS X java environment.
+"Kotlin Compiler version 1.0.5-2".
+
+### java
+Java means JDK Version 1.8.0_45 on Mac OS X.
+
+Build system is gradle v.3.2.1; targeting a java application jar.
