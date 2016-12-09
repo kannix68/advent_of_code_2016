@@ -1,0 +1,6 @@
+# ruby version and engine
+ruby '2.3.3'
+
+# gems
+gem 'minitest', '>= 5.9.1'
+
