@@ -28,7 +28,7 @@ sub readfile($) {
 }
 
 # format thousands
-#  see <
+#  see <?>
 sub fts($) {
   return reverse(join('_', unpack("(A3)*", reverse(shift()))));
 }
