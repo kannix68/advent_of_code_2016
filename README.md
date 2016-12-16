@@ -27,22 +27,23 @@ ad-hoc/brute force solutions.
 ### Days Calendar
 Info for solutions in this repository:
 
-
+* Day 16: Python
+* Day 15: Python
 * Day 14: Kotlin
 * Day 13: Kotlin
-* Day 12: Ruby 2.3
+* Day 12: Ruby
 * Day 11: Is complex...
-* Day 10: Ruby 2.3
+* Day 10: Ruby
 * Day 9: Perl 5
     (heavy regex processing especially in puzzle 2)
-    Alternate solution: Julia language (not ideal for string processing)
+    Alternate solution: Julia language 0.5 (not ideal for string processing)
 * Day 8: Java 8,
     using gradle 3.2 build system
 * Day 7: Kotlin 1.0
 * Day 6: Clojure 1.8
 * Day 5: Crystal 0.20.1 and Ruby 2.3
 * Day 4: Ruby 2.3
-* Day 3: Python 2.7
+* Day 3: Python
 * Day 2: Python 2.7
 * Day 1: Perl 5.8.4 +
 
