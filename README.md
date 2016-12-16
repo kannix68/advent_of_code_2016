@@ -27,6 +27,15 @@ ad-hoc/brute force solutions.
 ### Days Calendar
 Info for solutions in this repository:
 
+
+* Day 14: Kotlin
+* Day 13: Kotlin
+* Day 12: Ruby 2.3
+* Day 11: Is complex...
+* Day 10: Ruby 2.3
+* Day 9: Perl 5
+    (heavy regex processing especially in puzzle 2)
+    Alternate solution: Julia language (not ideal for string processing)
 * Day 8: Java 8,
     using gradle 3.2 build system
 * Day 7: Kotlin 1.0
@@ -73,3 +82,6 @@ Kotlin means `kotlinc` compiler in a Mac OS X java environment.
 Java means JDK Version 1.8.0_45 on Mac OS X.
 
 Build system is gradle v.3.2.1; targeting a java application jar.
+
+### julia
+Julia means julia 0.5.0 x86_64 on Max OS X.

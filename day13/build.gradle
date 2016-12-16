@@ -1,0 +1,65 @@
+/*
+ * example gradle build calls:
+ *    gradle build
+ *    gradle jar
+ *    gradle javadoc
+ *    gradle check
+ *
+ * example run call: `java -jar build/libs/<projectname>.jar`
+ */
+//apply plugin: 'application' // implicit: java (tasks: build, jar, javadoc, check, ...); tasks: run
+apply plugin: "kotlin"
+apply plugin: "application"
+
+mainClassName = "Day13a"
+
+buildscript {
+   ext.kotlin_version = '1.0.5-2'
+
+   repositories {
+     mavenCentral()
+   }
+
+   dependencies {
+     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+   }
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+
+sourceSets {
+  main {
+    //java {
+    //  srcDirs = ['src_java']
+    //}
+    kotlin {
+       srcDirs = ['src_kotlin']
+    }
+  }
+}
+jar {
+  manifest {
+    attributes "Main-Class": mainClassName
+  }
+}
+javadoc {
+  failOnError = false
+}
+
+//**** tasks
+
+task printcp {
+  description "show runtime classpathes"
+  doLast {
+    configurations.compile.each { println "compileCP: " + it }
+    configurations.runtime.each { println "runtimeCP: " + it }
+    configurations.testRuntime.each { println "testruntimeCP: " + it }
+    println "task printcp ends."
+  }
+}

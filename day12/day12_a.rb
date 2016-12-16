@@ -3,6 +3,8 @@
 #  Advent of code 2016, AoC day 12 part 2.
 # Day 12: Day 12: Leonardo's Monorail.
 # This solution (ruby-2.3.3) by kannix68, @ 2016-12-12.
+# This problem is analogous to aoc15, day23:
+#   running a simple instruction set assembler program on a small set of registers.
 #
 TESTSTR = <<EOS
 cpy 41 a
