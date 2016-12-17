@@ -27,12 +27,14 @@ ad-hoc/brute force solutions.
 ### Days Calendar
 Info for solutions in this repository:
 
+* Day 17: Kotlin
 * Day 16: Python
 * Day 15: Python
 * Day 14: Kotlin
 * Day 13: Kotlin
 * Day 12: Ruby
-* Day 11: Is complex...
+* Day 11: Kotlin (Is complex... geometrical sequence resource growth,
+    careful with function to determine if a move was already "seen".)
 * Day 10: Ruby
 * Day 9: Perl 5
     (heavy regex processing especially in puzzle 2)

@@ -38,6 +38,18 @@ class Day17b {
     println("assert-OK: $msg")
   }
 
+  /**
+   * Copy a MutableList<List<Any>> to another instance.
+   * @return the new mutableList-of-List
+   */
+  fun copyLol(stack: MutableList<List<Any>>): MutableList<List<Any>> {
+    val newstack = mutableListOf(listOf(0,0,"")); newstack.clear()
+    stack.forEach {
+      newstack.add(it.toList())
+    }
+    return newstack
+  }
+
   fun tracelog(msg: String) {
     if (LOGLEVEL > 1) {
       println("T: $msg")
@@ -62,7 +74,7 @@ class Day17b {
     val md = MessageDigest.getInstance("MD5")
     val data = s.toByteArray()  //java: s.getBytes();
     md.update(data, 0, data.size)
-    return "%1$032x".format(BigInteger(1, md.digest())) // < kotlin stdlib
+    return "%1$032x".format(BigInteger(1, md.digest())) // < kotlin stdlib string format
   }
 
   //**** problem domain
@@ -144,11 +156,4 @@ class Day17b {
     }
   }
 
-  private fun copyLol(stack: MutableList<List<Any>>): MutableList<List<Any>> {
-    val newstack = mutableListOf(listOf(0,0,"")); newstack.clear()
-    stack.forEach {
-      newstack.add(it.toList())
-    }
-    return newstack
-  }
 }

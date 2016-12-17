@@ -45,6 +45,18 @@ class Day17a {
     println("assert-OK: $msg")
   }
 
+  /**
+   * Copy a MutableList<List<Any>> to another instance.
+   * @return the new mutableList-of-List
+   */
+  fun copyLol(stack: MutableList<List<Any>>): MutableList<List<Any>> {
+    val newstack = mutableListOf(listOf(0,0,"")); newstack.clear()
+    stack.forEach {
+      newstack.add(it.toList())
+    }
+    return newstack
+  }
+
   fun tracelog(msg: String) {
     if (LOGLEVEL > 1) {
       println("T: $msg")
@@ -124,13 +136,5 @@ class Day17a {
       }
     }
     return false
-  }
-
-  private fun copyLol(stack: MutableList<List<Any>>): MutableList<List<Any>> {
-    val newstack = mutableListOf(listOf(0,0,"")); newstack.clear()
-    stack.forEach {
-      newstack.add(it.toList())
-    }
-    return newstack
   }
 }
