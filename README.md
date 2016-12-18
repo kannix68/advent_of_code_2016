@@ -27,6 +27,8 @@ ad-hoc/brute force solutions.
 ### Days Calendar
 Info for solutions in this repository:
 
+* Day 18: Cellular automaton. Perl 6
+  (Rakudo star perl6 seems to be slow)
 * Day 17: Kotlin
 * Day 16: Python
 * Day 15: Python
@@ -54,6 +56,14 @@ Info for solutions in this repository:
 ### perl
 Perl means a perl 5 standard distribution,
 tested using perl v5.18.2 on Mac OS X.
+
+### perl6
+Perl6 means Rakudo star perl distribution.
+
+```
+This is Rakudo version 2016.11 built on MoarVM version 2016.11
+implementing Perl 6.c.
+```
 
 ### python
 Python means a python 2.7 standard distribution,
