@@ -27,6 +27,18 @@ ad-hoc/brute force solutions.
 ### Days Calendar
 Info for solutions in this repository:
 
+* Day 25: Ruby
+   (Part 1 finished)
+* Day 24: Kotlin
+   (unfinished)
+* Day 23: Ruby
+* Day 22: Ruby
+   (Part 1 finished)
+* Day 21: Ruby
+   (Part 1 finished)
+* Day 20: Ruby
+   (Part 1 finished)
+* Day 19. Ruby
 * Day 18: Cellular automaton. Perl 6
   (Rakudo star perl6 seems to be slow)
 * Day 17: Kotlin

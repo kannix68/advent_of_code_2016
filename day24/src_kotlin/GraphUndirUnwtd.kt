@@ -20,18 +20,22 @@ class GraphUndirUnwtd {
 
   //fun addNode(intArrayOf: IntArray) {
   //  val node = Node(intArrayOf)
-  //  nodes.add(node)
+  //  pointnodes.add(node)
   //}
 
-  fun addNode(idstr: String) {
-    nodes.add(Node(idstr))
+  fun addNode(nodeid: String) {
+    nodes.add(Node(nodeid))
   }
 
-  fun  addEdge(nid1: String, nid2: String) {
+  fun addNode(node: Node) {
+    nodes.add(node)
+  }
+
+  fun addEdge(nid1: String, nid2: String) {
     edges.add(Edge(nid1, nid2))
   }
 
-  fun containsNode(nid: String): Boolean {
-    return nodes.map { it.nid }.contains(nid)
+  fun containsNode(nodeid: String): Boolean {
+    return nodes.map { it.nodeid }.contains(nodeid)
   }
 }

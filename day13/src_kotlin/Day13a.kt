@@ -1,5 +1,7 @@
 /**
  * AoC2016 Day13a main class.
+ * Day 13: A Maze of Twisty Little Cubicles.
+ *
  * Run with:
  *
  * ```
