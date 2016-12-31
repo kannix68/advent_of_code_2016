@@ -13,6 +13,7 @@ class Day24a : AocBase() {
     val MAXROUNDS_TRAVEL = 10  // max hops for getting shortest travele for all points
     val MAXSOLUTIONS = 1024
     val DOTEACH = 100000
+    var inputTitle = ""
 
     val TESTSTR = """
 ###########
@@ -27,11 +28,13 @@ class Day24a : AocBase() {
     @JvmStatic fun main(args: Array<String>) {
       println("Day starting...")
       val o = create()
+      inputTitle = "test"
       o.process(TESTSTR)
       println("TEST ended, problem-solution starting...")
       //o.process(TESTSTR)
       //File("somefile.txt").readLines().forEach {
       //}
+      inputTitle = "rheinput"
       val datastr = File("day24_data.txt").readText()
       o.process(datastr)
       println("...Day ends.!")
@@ -57,6 +60,8 @@ class Day24a : AocBase() {
     pointedges.forEach { ptsedge ->
       deblog("calc shortestPath for pointedge: $ptsedge")
       val ptsdist = getShortestPath(ptsedge.node1, ptsedge.node2, g)
+      val outstr = "${ptsedge.getIdString()}=$ptsdist\n"
+      File("day24_paths_${inputTitle}.txt").appendText(outstr)
       val tm = System.currentTimeMillis()
       infolog("  getShortestPath TM=${tm-lastttm}")
       lastttm = tm
@@ -218,6 +223,10 @@ class Day24a : AocBase() {
             if (acceptednum % DOTEACH == 0) {
               System.err.print(".${System.currentTimeMillis()-lastrdtm} ")
               System.err.flush()
+              val maxset = 100000
+              if (acceptednum >= maxset) {
+                val newPaths = nextPaths.sortedByDescending { pathcost(pn2, it) }.take(maxset)
+              }
             }
           } else {
             //tracelog("rejected self-ref path ${curPath} $str")
@@ -230,6 +239,10 @@ class Day24a : AocBase() {
     //println("ABORT after round #$round; seen-nodes-#=${seenNodes.size}")
     throw RuntimeException("ABORT after round #$round; seen-nodes-#=${seenNodes.size}")
     //return -1
+  }
+
+  private fun pathcost(targetPointNode: PointNode, it: List<String>): Any {
+    throw UnsupportedOperationException("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
   private fun buildWorldGraph(world: World): GraphUndirUnwtd {

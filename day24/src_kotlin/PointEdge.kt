@@ -11,6 +11,10 @@ class PointEdge(val node1: PointNode, val node2:PointNode, var dist: Int = 0) {
     return "PtEdge dst=$dist: ${node1.nodename}-${node2.nodename}(${node1.nodeid}:${node2.nodeid})"
   }
 
+  fun getIdString(): String {
+    return "${node1.nodename}-${node2.nodename}"
+  }
+
   //fun dup(): PointEdge {
   //  return PointEdge(node1, node2, dist)
   //}

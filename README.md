@@ -28,16 +28,16 @@ ad-hoc/brute force solutions.
 Info for solutions in this repository:
 
 * Day 25: Ruby
-   (Part 1 finished)
-* Day 24: Kotlin
-   (unfinished)
+   (Part 1 finished, Part 2 achieved as soon as all previous challenges solved)
+* Day 24: Python 2 (borrowed/ideas from AoC16 Day 24 Solutions reddit thread,
+    very elegant solution featuring networx lib)
+   (Kotlin unfinished)
 * Day 23: Ruby
-* Day 22: Ruby
-   (Part 1 finished)
-* Day 21: Ruby
-   (Part 1 finished)
-* Day 20: Ruby
-   (Part 1 finished)
+* Day 22: Ruby (Part 1). Python 3 (Part 2)
+    (borrowed/ideas from AoC16 Day 22 Solutions reddit thread)
+* Day 21: Ruby (Part 2 was challenging)
+* Day 20: Ruby (Part 1). Python 2 (Part 2)
+    (borrowed/ideas from AoC16 Day 20 Solutions reddit thread)
 * Day 19. Ruby
 * Day 18: Cellular automaton. Perl 6
   (Rakudo star perl6 seems to be slow)
@@ -88,7 +88,7 @@ tested using ruby v2.3.3 in a rvm environment on Mac OS X.
 A `Gemfile` for bundler is suppied, so you can use
 
     bundle install  # generate Gemfile.lock GemSet
-    bundle exec day04_a.rb  # execute script 
+    bundle exec day04_a.rb  # execute script
 
 to execute in a Bundler-Environment with specified ruby Version an gems.
 
